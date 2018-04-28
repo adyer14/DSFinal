@@ -100,6 +100,14 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 
 
    		var houseID = "#" + houseNS;
+
+   		console.log("String:")
+   		console.log(houseSTR)
+   		console.log("No spaces:")
+   		console.log(houseNS)
+   		console.log("ID:")
+   		console.log(houseID)
+   		
    		var data = gotData;
    		var filteredGOT = data.filter(function(d) { return d.key == house; });
 
