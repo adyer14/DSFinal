@@ -20,6 +20,10 @@ text {
 	font-weight: normal;
 }
 
+.ylabel{
+	font-weight: normal;
+}
+
 .chart {
   float: left;
   padding-right: 5px;
@@ -30,12 +34,10 @@ text {
 
 #viz {
 	margin: auto;
-	width: 90%;
-
 }
 
 .svgs {
-	padding: 25px 0 0 55px;
+	padding: 25px 0 0 60px;
 }
 
 </style>
@@ -106,6 +108,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		.text(function(d) { return "Popularity" });
 
   svg.append("text")
+  	  .attr("class", "ylabel")
       .attr("transform", "rotate(-90)")
       .attr("y", 0 - margin.left)
       .attr("x",0 - (height / 2))
