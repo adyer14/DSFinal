@@ -48,7 +48,20 @@ text {
 
 <body>
 	<h1>Game of Thrones Death Predictions by House</h1>
-	<div id="details"></div>
+	<div id="details">
+		<p id="Name"></p>
+		<p id="Title"></p>
+		<p id="Gender"></p>
+		<p id="House"></p>
+		<p id="Mother"></p>
+		<p id="Father"></p>
+		<p id="Heir"></p>
+		<p id="Spouse"></p>
+		<p id="Noble"></p>
+		<p id="DeadRelatives"></p>
+		<p id="Popularity"></p>
+		<p id="ProbOfDeath"></p>
+	</div>
 	<div id="viz"></div>
 </body>
 
@@ -180,10 +193,9 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    			.style("opacity", .5);
    	}
 
-   	var test = d3.selectAll(".dot");
-   	console.log(test);
+   	var characters = d3.selectAll(".dot");
 
-   	test.on("mouseover", function(gotData) {
+   	characters.on("click", function(gotData) {
    		console.log(gotData.name);
    	});
 
