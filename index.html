@@ -115,7 +115,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
     //Draw Y axis
     svg.append("g")
       .attr("class", "yaxis")
-      .attr("transform", "translate(" + width + ",0)")
+      .attr("transform", "translate(0,0)")
       .call(d3.axisLeft(y));
 
     svg.selectAll(".tick")
