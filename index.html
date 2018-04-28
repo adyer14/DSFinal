@@ -93,9 +93,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
    		x.domain([0, 1]);
    		y.domain([0.1]);
 
-   		if (house.contains(" ")) {
-   			var houseNS = house.split(" ").join("");
-   		}
+		var houseNS = house.split(" ").join("");
 
 
 
