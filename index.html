@@ -91,11 +91,13 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 
    	function createPlot(house) {
    		x.domain([0, 1]);
-   		y.domain([0.1]);
+   		y.domain([0, 1]);
 
    		var houseSTR = house.toString();
 
-		var houseNS = houseSTR.split(" ").join("");
+   		var houseNA = houseSTR.split("'").join("");
+		var houseNS = houseNA.split(" ").join("");
+
 
 
 
