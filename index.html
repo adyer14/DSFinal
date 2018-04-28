@@ -59,6 +59,10 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		console.log("data:");
 		console.log(gotData);
 
+		d3.csv("GOTHOUSES", function(error, data) {
+			console.log(data);
+		})
+
 	//Create Plots
 	gotData.keys().forEach(function(d) {
 		createPlot(d.key);
