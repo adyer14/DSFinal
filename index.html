@@ -156,18 +156,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 
    		var houseNA = houseSTR.split("'").join("");
 		var houseNS = houseNA.split(" ").join("");
-
-
-
-
    		var houseID = "#" + houseNS;
-
-   		console.log("String:")
-   		console.log(houseSTR)
-   		console.log("No spaces:")
-   		console.log(houseNS)
-   		console.log("ID:")
-   		console.log(houseID)
 
    		var data = gotData;
    		var filteredGOT = data.filter(function(d) { return d.key == house; });
@@ -186,7 +175,9 @@ d3.csv("character-predictions.csv", function(error, rawData) {
    	}
 
    		d3.selectAll(".dot")
-   			.on("onclick", function(d) {
+   			.on("mousover", function(d) {
+   				console.log(d.name);
+
    				d3.select(details)
    					.innerHTML = "Name:" + d.name;
    			});
