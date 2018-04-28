@@ -93,15 +93,17 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		.style("text-anchor", "middle")
 		.text(function(d) { return d.key });
 
-
-
-		console.log("data:");
-		console.log(gotData);
+	svg.append("text")
+		.attr("class", "xlabel")
+		.attr("transform",
+				"translate(" +  (width/2) + " ," + 
+                           		(height + margin.top + 20) + ")")
+		.style("text-anchor", "middle")
+		.text(function(d) { return "Popularity" });
 
 
 		//create plots
 		uniqueData.forEach(function(d) {
-			console.log(d.house);
 			createPlot(d.house);
 		});
 
