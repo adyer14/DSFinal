@@ -93,7 +93,9 @@ d3.csv("character-predictions.csv", function(error, rawData) {
    		x.domain([0, 1]);
    		y.domain([0.1]);
 
-		var houseNS = house.split(" ").join("");
+   		var houseSTR = house.toString();
+
+		var houseNS = houseSTR.split(" ").join("");
 
 
 
