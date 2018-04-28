@@ -65,7 +65,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		//create plots
 		uniqueData.forEach(function(d) {
 			console.log(d.house);
-			createPlot(d);
+			createPlot(d.house);
 		});
 
 
