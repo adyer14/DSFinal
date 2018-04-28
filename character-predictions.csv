@@ -678,7 +678,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 677,0,1,0.514,0.486,Kromm,None,0,ironborn,,299,,,,House Greyjoy,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.006688963,0
 678,0,0,0.212,0.788,Kurz,None,1,,,299,,,,None,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.036789298,0
 679,1,0,0.199,0.801,Kyle,Ser,1,,,,,,,None,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.026755853,1
-680,0,1,0.957,0.043,Kyle (brotherhood),None,0,,,299,,,,Brotherhood without banners,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0,0
+680,0,1,0.957,0.043,Kyle (brotherhood),None,0,,,299,,,,Brotherhood Without Banners,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0,0
 681,1,0,0.499,0.501,Kyle Royce,None,1,,,,,,,House Royce,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.02006689,1
 682,1,0,0.318,0.682,Kyleg,None,0,Free Folk,,,,,,None,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.010033445,1
 683,1,1,0.809,0.191,Kym,Maester,0,,,,,,,None,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0,1
@@ -688,7 +688,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 687,1,1,0.971,0.029,Lanna (Happy Port),None,0,Braavosi,286,,,,,Happy Port,,0,0,0,1,0,Unknown,Unknown,Unknown,Unknown,0,0,19,0,0,0,0.026755853,1
 688,1,1,0.964,0.036,Larraq,None,1,Ghiscari,,,,,,None,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.02006689,1
 689,1,1,0.712,0.288,Layna,None,0,,279,,,,,None,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,26,0,0,0,0.023411371,1
-690,1,1,0.824,0.176,Lem,None,1,,,,,,,Brotherhood without banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.08361204,1
+690,1,1,0.824,0.176,Lem,None,1,,,,,,,Brotherhood Without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.08361204,1
 691,1,1,0.797,0.203,Leana Frey,None,0,,299,,,,,House Frey,,0,0,0,1,0,Unknown,Unknown,Unknown,Unknown,0,0,6,0,0,0,0.073578595,1
 692,1,1,0.702,0.298,Lennocks,None,1,,,,,,,None,,0,0,1,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.003344482,1
 693,0,0,0.019,0.981,Lem (Standfast),None,0,,161,,,,,House Osgrey,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,100,0,0,0,0.013377926,0
@@ -791,7 +791,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 790,1,1,0.714,0.286,Mortimer Boggs,Ser,1,,,,,,,House Boggs,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.013377926,1
 791,0,0,0.044,0.956,Mors Martell (brother of Doran),None,1,,248,248,,,,House Martell,,0,0,0,1,0,Unknown,Unknown,Unknown,Unknown,0,0,0,0,0,0,0.066889632,0
 792,1,0,0.116,0.884,Mother Mole,None,0,Free Folk,,,,,,None,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.043478261,1
-793,1,1,0.735,0.265,Mudge (brotherhood),None,0,,,,,,,Brotherhood without banners,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0,1
+793,1,1,0.735,0.265,Mudge (brotherhood),None,0,,,,,,,Brotherhood Without Banners,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0,1
 794,1,1,0.759,0.241,Mudge (miller),None,1,,,,,,,None,,0,0,1,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.003344482,1
 795,1,1,0.731,0.269,Mudge (swineherd),None,1,,,,,,,House Osgrey,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0,1
 796,1,1,0.724,0.276,Munciter,Wisdom,1,,,,,,,Alchemists' Guild,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.006688963,1
@@ -864,7 +864,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 863,0,1,0.759,0.241,Praed,None,1,,,299,,,,None,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.016722408,0
 864,1,1,0.983,0.017,Puckens,None,0,,,,,,,House Lannister,,0,0,0,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.013377926,1
 865,1,1,0.796,0.204,Pudding,None,0,,,,,,,None,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.003344482,1
-866,1,1,0.83,0.17,Puddingfoot,None,0,,,,,,,Brotherhood without banners,,0,0,1,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.003344482,1
+866,1,1,0.83,0.17,Puddingfoot,None,0,,,,,,,Brotherhood Without Banners,,0,0,1,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.003344482,1
 867,1,1,0.926,0.074,Qalen,Maester,1,,,,,,,House Greyjoy,,0,1,0,1,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.010033445,1
 868,1,1,0.998,0.002,Qarl the Thrall,None,0,Ironborn,,,,,,None,,0,0,0,1,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.016722408,1
 869,1,0,0.487,0.513,Qarl Kenning,None,0,Ironborn,,,,,,House Kenning of Harlaw,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.006688963,1
@@ -1558,7 +1558,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1557,0,1,0.678,0.322,Melara Hetherspoon,None,0,,264,276,,,,House Hetherspoon,,0,0,0,1,1,Unknown,Unknown,Unknown,Unknown,0,0,12,0,0,0,0.046822742,0
 1558,0,0,0,1,Melissa Blackwood,None,0,,156,,,,,House Blackwood,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,100,0,0,0,0.050167224,0
 1559,1,1,0.884,0.116,Melisandre,None,0,Asshai,,,,,,R'hllor,,0,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,1,0.745819398,1
-1560,1,1,0.998,0.002,Merrit,None,0,,,,,,,Brotherhood without banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.010033445,1
+1560,1,1,0.998,0.002,Merrit,None,0,,,,,,,Brotherhood Without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.010033445,1
 1561,1,0,0.45,0.55,Meryn Trant,Ser,1,,,,,,,House Trant,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.220735786,1
 1562,0,0,0.322,0.678,Merrett Frey,None,1,Riverlands,262,300,,,,House Frey,Mariya Darry,1,1,1,1,1,Unknown,Unknown,Unknown,1,1,0,38,0,0,1,0.434782609,0
 1563,0,1,0.959,0.041,Mohor,None,1,,,298,,,,House Bracken,,1,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.010033445,0
@@ -1630,7 +1630,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1629,0,0,0.09,0.91,Alester Florent,Brightwater,1,,,300,,,,House Florent,Melara Crane,0,1,1,0,1,Unknown,Unknown,Unknown,1,1,1,,0,0,0,0.327759197,0
 1630,1,1,0.892,0.108,Alysane Mormont,None,0,Northmen,273,,,,,House Mormont,,0,0,0,1,1,Unknown,Unknown,Unknown,Unknown,0,0,32,0,0,0,0.070234114,1
 1631,1,0,0.453,0.547,Alerie Hightower,Highgarden,0,,257,,,,,House Hightower,Mace Tyrell,1,1,1,1,1,Unknown,Unknown,Unknown,1,1,1,48,0,0,0,0.227424749,1
-1632,1,1,0.666,0.334,Anguy,None,1,,,,,,,Brotherhood without banners,,1,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.130434783,1
+1632,1,1,0.666,0.334,Anguy,None,1,,,,,,,Brotherhood Without Banners,,1,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.130434783,1
 1633,1,1,0.967,0.033,Andrik,Lord of Southshield,1,Ironborn,,,,,,House Drumm,,0,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.043478261,1
 1634,0,0,0.404,0.596,Amory Lorch,Ser,1,,,299,,,,House Lorch,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.277591973,0
 1635,1,0,0.055,0.945,Archibald Yronwood,Ser,1,,,,,,,House Yronwood,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.140468227,1
@@ -1711,7 +1711,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1710,1,1,0.96,0.04,Gorold Goodbrother,Lord of Hammerhorn,1,Ironborn,,,,,,House Goodbrother,,0,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.080267559,1
 1711,1,0,0.171,0.829,Grenn,None,1,Westeros,281,,,,,Night's Watch,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,24,0,0,0,0.204013378,1
 1712,1,0,0.176,0.824,Grey Worm,None,1,,,,,,,Unsullied,,0,0,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.140468227,1
-1713,1,0,0.344,0.656,Greenbeard,None,1,Tyroshi,,,,,,Brotherhood without banners,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.036789298,1
+1713,1,0,0.344,0.656,Greenbeard,None,1,Tyroshi,,,,,,Brotherhood Without Banners,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.036789298,1
 1714,0,1,0.778,0.222,Groleo,[1],0,Pentoshi,,300,,,,House Targaryen,,0,0,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.110367893,0
 1715,1,1,0.504,0.496,Grunt,None,1,Northmen,,,,,,House Bolton,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.026755853,1
 1716,0,0,0.405,0.595,Gregor Clegane,Ser,1,,265,300,,,,House Clegane,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,35,1,1,1,0.836120401,0
@@ -1738,7 +1738,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1737,1,0,0.048,0.952,Illyrio Mopatis,Magister,1,Pentoshi,,,,,,House Targaryen,Cousin to the Prince of Pentos,1,1,1,1,1,Unknown,Unknown,Unknown,1,1,1,,0,0,1,0.394648829,1
 1738,1,0,0.474,0.526,Irri,None,0,Dothraki,283,,,,,House Targaryen,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,22,0,0,0,0.193979933,1
 1739,0,1,0.577,0.423,Imry Florent,Ser,1,,,299,,,,House Florent,,0,1,1,1,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.183946488,0
-1740,1,1,0.825,0.175,Jack-Be-Lucky,None,1,,,,,,,Brotherhood without banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.026755853,1
+1740,1,1,0.825,0.175,Jack-Be-Lucky,None,1,,,,,,,Brotherhood Without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.026755853,1
 1741,0,1,0.784,0.216,Jacelyn Bywater,Ser,1,,,299,,,,House Bywater,,0,1,1,1,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.130434783,0
 1742,1,0,0.352,0.648,Jaime Lannister,Ser,1,Westerlands,266,,,,,House Lannister,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,39,7,1,1,1,1
 1743,1,0,0.468,0.532,Jason Mallister,Seagard,1,Riverlands,,,,,,House Mallister,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.127090301,1
@@ -1761,7 +1761,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1760,1,1,0.572,0.428,Lothor Brune,Ser,1,,,,,,,House Brune of Brownhollow,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.137123746,1
 1761,0,0,0.454,0.546,Lysa Arryn,Lady of the Vale,0,,266,300,,,,House Tully,Jon Arryn,0,0,0,0,0,Unknown,Unknown,Unknown,0,1,1,34,5,1,0,0,0
 1762,1,1,0.69,0.31,Maege Mormont,Lady of Bear Island,0,Northmen,239,,,,,House Mormont,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,66,1,1,0,0.137123746,1
-1763,1,1,0.825,0.175,Mad Huntsman,None,1,,,,,,,Brotherhood without banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.036789298,1
+1763,1,1,0.825,0.175,Mad Huntsman,None,1,,,,,,,Brotherhood Without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.036789298,1
 1764,1,0,0.067,0.933,Mance Rayder,None,1,Free folk,,,,,,None,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,1,0.7090301,1
 1765,1,1,0.637,0.363,Mark Mullendore,Ser,1,,,,,,,House Mullendore,,0,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.050167224,1
 1766,0,1,0.752,0.248,Mark Ryswell,Ser,0,Northmen,,283,,,,House Ryswell,,1,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.02006689,0
@@ -1776,7 +1776,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1775,1,0,0.477,0.523,Morros Slynt,Lord,1,,,,,,,House Slynt,,0,1,1,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.043478261,1
 1776,1,1,0.868,0.132,Myranda Royce,None,0,,279,,,,,House Royce of the Gates of the Moon,,0,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,26,0,0,0,0.043478261,1
 1777,0,0,0,1,Nettles,None,0,,113,,,,,Blacks,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,100,0,0,0,0.063545151,0
-1778,1,1,0.981,0.019,Notch,None,0,,,,,,,Brotherhood without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.013377926,1
+1778,1,1,0.981,0.019,Notch,None,0,,,,,,,Brotherhood Without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.013377926,1
 1779,1,1,0.827,0.173,Obara Sand,None,0,Dornish,271,,,,,House Martell,,0,0,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,34,1,1,0,0.140468227,1
 1780,0,0,0.012,0.988,Ulf the White,Ser,1,,,130,,,,Blacks,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.060200669,0
 1781,1,0,0.235,0.765,Pypar,None,1,,,,,,,Night's Watch,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.113712375,1
@@ -1802,7 +1802,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1801,1,0,0.47,0.53,Wyman Manderly,Lord of White Harbor,1,,239,,,,,House Manderly,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,66,0,0,1,0.35451505,1
 1802,0,1,0.917,0.083,Yellow Dick,None,1,Westeros,,300,,,,House Bolton,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.043478261,0
 1803,0,1,0.805,0.195,Yoren,None,0,Westeros,,299,,,,Night's Watch,,1,1,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.267558528,0
-1804,1,1,0.989,0.011,Watty,None,0,,,,,,,Brotherhood without banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.013377926,1
+1804,1,1,0.989,0.011,Watty,None,0,,,,,,,Brotherhood Without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.013377926,1
 1805,1,1,0.503,0.497,Skahaz mo Kandaq,None,0,Ghiscari,,,,,,House of Kandaq,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.197324415,1
 1806,1,0,0.481,0.519,Wylis Manderly,Ser,1,,252,,,,,House Manderly,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,53,0,0,0,0.157190635,1
 1807,0,0,0.469,0.531,Theo Wull,None,1,Northern mountain clans,,283,,,,House Wull,,1,0,1,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.02006689,0
@@ -1890,7 +1890,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1889,1,0,0.15,0.85,Tycho Nestoris,None,1,Braavosi,,,,,,Iron Bank of Braavos,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.086956522,1
 1890,1,0,0.389,0.611,Tanselle,None,0,Dornishmen,,,,,,None,,0,0,0,0,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.02006689,1
 1891,1,1,0.979,0.021,Rhaelle Targaryen,Princess,0,,229,,,,,House Targaryen,Ormund Baratheon,0,0,0,1,1,Unknown,Unknown,Unknown,1,1,1,76,0,0,0,0.137123746,1
-1892,1,1,0.954,0.046,Tom of Sevenstreams,None,1,,240,,,,,Brotherhood without banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,65,0,0,0,0.153846154,1
+1892,1,1,0.954,0.046,Tom of Sevenstreams,None,1,,240,,,,,Brotherhood Without Banners,,0,0,1,1,0,Unknown,Unknown,Unknown,Unknown,0,0,65,0,0,0,0.153846154,1
 1893,1,1,0.818,0.182,Shyra Errol,Haystack Hall,0,,,,,,,House Errol,,0,1,0,0,0,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.013377926,1
 1894,1,1,0.967,0.033,Steelskin,None,1,Ghiscari,,,,,,House of Loraq,,0,0,0,0,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.016722408,1
 1895,1,1,0.978,0.022,Val,None,0,Free folk,,,,,,None,,0,0,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.140468227,1
@@ -1924,7 +1924,7 @@ S.No,actual,pred,alive,plod,name,title,male,culture,dateOfBirth,DateoFdeath,moth
 1923,1,1,0.985,0.015,Bethany Bolton,the Dreadfort,1,Northmen,,,,,,House Bolton,Roose Bolton,0,0,0,1,1,Unknown,Unknown,Unknown,1,1,1,,0,0,0,0.043478261,1
 1924,1,1,0.57,0.43,Desmond Grell,Ser,0,,237,,,,,House Grell,,1,1,1,1,0,Unknown,Unknown,Unknown,Unknown,0,1,68,0,0,0,0.076923077,1
 1925,1,0,0.353,0.647,Devan Seaworth,None,1,,287,,,,,House Seaworth,,0,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,0,18,0,0,0,0.093645485,1
-1926,1,0,0.226,0.774,Gendry,Ser,1,,284,,,,,brotherhood without banners,,1,1,1,1,0,Unknown,Unknown,Unknown,Unknown,0,1,21,2,1,1,0.43812709,1
+1926,1,0,0.226,0.774,Gendry,Ser,1,,284,,,,,Brotherhood Without Banners,,1,1,1,1,0,Unknown,Unknown,Unknown,Unknown,0,1,21,2,1,1,0.43812709,1
 1927,1,1,0.964,0.036,Gran Goodbrother,None,1,Ironborn,,,,,,House Goodbrother,,0,0,0,1,0,Unknown,Unknown,Unknown,Unknown,0,0,,0,0,0,0.026755853,1
 1928,1,0,0.468,0.532,Loras Tyrell,Ser,1,The Reach,282,,,,,House Tyrell,,1,1,1,1,1,Unknown,Unknown,Unknown,Unknown,0,1,23,2,1,1,0.665551839,1
 1929,1,1,0.918,0.082,Ricasso,Sunspear,0,,,,,,,House Martell,,0,0,0,1,1,Unknown,Unknown,Unknown,Unknown,0,1,,0,0,0,0.070234114,1
