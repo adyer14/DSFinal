@@ -64,7 +64,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 
 		//create plots
 		uniqueData.forEach(function(d) {
-			console.log(d);
+			console.log(d.house);
 			createPlot(d);
 		});
 
@@ -107,7 +107,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
    		console.log(houseNS)
    		console.log("ID:")
    		console.log(houseID)
-   		
+
    		var data = gotData;
    		var filteredGOT = data.filter(function(d) { return d.key == house; });
 
