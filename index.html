@@ -35,7 +35,11 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		.append("svg")
 			.attr("class", "svgs")
 		.append("g")
-			.attr("id", function(d) { return d.key.split(" ").join(""); })
+			.attr("id", function(d) { 
+				var string = d.key.split(" ").join("");
+				var stringNA = string.split("'").join("");
+
+				return stringNA; })
 			.attr("class", "gbody");
 
 	var svg = d3.selectAll(".svgs")
