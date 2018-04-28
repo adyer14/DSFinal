@@ -183,6 +183,10 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    	var test = d3.selectAll(".dot");
    	console.log(test);
 
+   	test.on("mouseover", function() {
+   		console.log("hi");
+   	});
+
 
 	});
 });
