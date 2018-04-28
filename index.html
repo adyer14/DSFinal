@@ -36,6 +36,10 @@ text {
 	margin: auto;
 }
 
+#details {
+	margin: auto;
+}
+
 .svgs {
 	padding: 25px 0 0 80px;
 }
@@ -44,6 +48,7 @@ text {
 
 <body>
 	<h1>Game of Thrones Death Predictions by House</h1>
+	<div id="details"></div>
 	<div id="viz"></div>
 </body>
 
@@ -180,7 +185,11 @@ d3.csv("character-predictions.csv", function(error, rawData) {
    			.style("opacity", .5);
    	}
 
-
+   		d3.selectAll(".dot")
+   			.on("click", function(d) {
+   				d3.select(details)
+   					.innerHTML = "Name:" + d.name;
+   			});
 
 
 
