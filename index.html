@@ -196,7 +196,7 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    	var characters = d3.selectAll(".dot");
 
    	characters.on("click", function(gotData) {
-   		console.log(gotData.name);
+   		d3.select("#Name") = "Name: " + gotData.name;
    	});
 
 
