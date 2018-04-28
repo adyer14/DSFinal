@@ -4,10 +4,118 @@
 </head>
 
 <body>
-	<h1>Test</h1>
-	<svg id="mainViz"></svg>
+	<h1>Game of Thrones Death Predictions by House</h1>
+	<div id="viz"></div>
 </body>
 
 <script type="text/javascript">
+
+var margin = {top: 15, right: 10, bottom: 40, left: 40},
+    width = 300,
+    height = 150;
+
+d3.csv("character-predictions.csv", function(error, rawData) {
+
+	rawData.forEach(function(d) {
+		d.plod = +d.plod;
+		d.numDeadRelations = +d.numDeadRelations;
+		d.popularity = +d.popularity;
+	});
+
+	var gotData = d3.nest()
+	.key(function(d) {return d.house;})
+	.entries(rawData)
+	.sort(function(a, b) { return d3.descending(a.values, b.values); });
+
+	var div = d3.select("#viz").selectAll(".chart").data(gotData);
+
+	div.enter().append("div").attr("class", "chart")
+		.append("svg")
+			.attr("class", "svgs")
+		.append("g")
+			.attr("id", function(d) { return d.key.split(" ").join(""); })
+			.attr("class", "gbody");
+
+	var svg = d3.selectAll(".svgs")
+				.attr("width", width + margin.left + margin.right)
+				.attr("height", height + margin.top + margin.bottom);
+
+	var x = d3.scaleLinear()
+				.range([0, width]);
+
+	var y = d3.scaleLinear()
+				.range([height, 0]);
+
+	svg.append("text")
+		.attr("class", "house")
+		.attr("transform",
+				"translate(" +  (width/2) + " ," + 
+                           		(height + margin.top + 20) + ")")
+		.style("text-anchor", "middle")
+		.text(function(d) { return d.key });
+
+		console.log("data:");
+		console.log(gotData);
+		console.log("keys:");
+		console.log(gotData.keys());
+
+	//Create Plots
+	//TODO
+
+
+	//Draw X axis
+    svg.append("g")
+      .attr("class", "xaxis")
+      .attr("transform", "translate(0," + height + ")")
+      .call(d3.axisBottom(x));
+
+    //Draw Y axis
+    svg.append("g")
+      .attr("class", "yaxis")
+      .attr("transform", "translate(" + width + ",0)")
+      .call(d3.axisLeft(y));
+
+    svg.selectAll(".tick")
+    	.each(function(d) {
+    		if (d == 0) {
+    			this.remove();
+    		}
+    	});
+
+
+   	function createPlot(house) {
+   		x.domain([0, 1]);
+   		y.domain([0.1]);
+
+   		var houseNS = house.split(" ").join("");
+
+   		var houseID = "#" + houseNS;
+   		var data = gotData;
+   		var filteredGOT = data.filter(function(d) { return d.key == house; });
+
+   		d3.select(houseID)
+   			.append("g")
+   		.selectAll(".dot")
+   			.data(filteredGOT[0].values)
+   		.enter().append("circle")
+   			.attr("class", "dot")
+   			.attr("r", 5)
+   			.attr("cx", function(d) { return x(d.popularity); })
+   			.attr("cy", function(d) { return y(d.plod); })
+   			.attr("fill", "Red")
+   			.style("opacity", .5);
+   	}
+
+
+
+
+
+
+
+
+
+
+
+});
 	
 </script>
