@@ -16,6 +16,10 @@ text {
 	font-weight: bold;
 }
 
+.xlabel {
+	font-weight: normal;
+}
+
 .chart {
   float: left;
   padding-right: 5px;
@@ -100,6 +104,14 @@ d3.csv("character-predictions.csv", function(error, rawData) {
                            		(height + margin.top + 20) + ")")
 		.style("text-anchor", "middle")
 		.text(function(d) { return "Popularity" });
+
+  svg.append("text")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Probability of Death"); 
 
 
 		//create plots
