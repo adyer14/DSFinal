@@ -16,6 +16,8 @@ var margin = {top: 15, right: 10, bottom: 40, left: 40},
 
 d3.csv("character-predictions.csv", function(error, rawData) {
 
+	d3.csv("GOTHOUSES.csv", function(error, uniqueData) {
+
 	rawData.forEach(function(d) {
 		d.plod = +d.plod;
 		d.numDeadRelations = +d.numDeadRelations;
@@ -59,11 +61,11 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		console.log("data:");
 		console.log(gotData);
 
-		d3.csv("GOTHOUSES.csv", function(error, data) {
-			console.log(data);
-		})
 
 		//create plots
+		uniqueData.forEach(function(d) {
+			createPlot(d.key);
+		});
 
 
 	//Draw X axis
@@ -118,7 +120,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 
 
 
-
+	});
 });
 	
 </script>
