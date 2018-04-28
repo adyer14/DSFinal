@@ -177,17 +177,11 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    					return "Red"
    				}
    			})
-   			.style("opacity", .5)
-   			.on("mousover", function(d) {
-   				console.log("hi");
-   			});
+   			.style("opacity", .5);
    	}
 
-
-
-
-
-
+   	var test = d3.selectAll(".dot");
+   	console.log(test);
 
 
 	});
