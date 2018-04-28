@@ -183,8 +183,8 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    	var test = d3.selectAll(".dot");
    	console.log(test);
 
-   	test.on("mouseover", function(data) {
-   		console.log("hi");
+   	test.on("mouseover", function(gotData) {
+   		console.log(gotData.name);
    	});
 
 
