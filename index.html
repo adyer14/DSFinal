@@ -170,16 +170,22 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    			.attr("r", 5)
    			.attr("cx", function(d) { return x(d.popularity); })
    			.attr("cy", function(d) { return y(d.prob_dead); })
-   			.attr("fill", "Red")
+   			.attr("fill", function(d) {
+   				if (d.isNoble == "1") {
+   					return "Blue"
+   				} else {
+   					return "Red"
+   				}
+   			})
    			.style("opacity", .5);
    	}
+
+   	svg.selectAll("circle")
+    .classed("characters", true);
 
    		d3.selectAll("circle")
    			.on("mousover", function(d) {
    				console.log(d.name);
-
-   				d3.select(details)
-   					.innerHTML = "Name:" + d.name;
    			});
 
 
