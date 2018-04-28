@@ -1,10 +1,54 @@
 <head>
 	<script src="https://d3js.org/d3.v4.min.js"></script>
 	<script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative" rel="stylesheet">
 </head>
+
+<style>
+
+h1 {
+	font-family: 'Cinzel Decorative', cursive;
+	text-align: center;
+}
+
+text {
+	font-family: 'Cinzel Decorative', cursive;
+	font-weight: bold;
+}
+
+.xlabel {
+	font-weight: normal;
+}
+
+.ylabel{
+	font-weight: normal;
+}
+
+.chart {
+  float: left;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  padding-top:0;
+  padding-left:0;
+}
+
+#viz {
+	margin: auto;
+}
+
+#details {
+	margin: auto;
+}
+
+.svgs {
+	padding: 25px 0 0 80px;
+}
+
+</style>
 
 <body>
 	<h1>Game of Thrones Death Predictions by House</h1>
+	<div id="details"></div>
 	<div id="viz"></div>
 </body>
 
@@ -15,6 +59,8 @@ var margin = {top: 15, right: 10, bottom: 40, left: 40},
     height = 150;
 
 d3.csv("character-predictions.csv", function(error, rawData) {
+
+	d3.csv("GOTHOUSES.csv", function(error, uniqueData) {
 
 	rawData.forEach(function(d) {
 		d.plod = +d.plod;
@@ -33,7 +79,11 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		.append("svg")
 			.attr("class", "svgs")
 		.append("g")
-			.attr("id", function(d) { return d.key.split(" ").join(""); })
+			.attr("id", function(d) { 
+				var string = d.key.split(" ").join("");
+				var stringNA = string.split("'").join("");
+
+				return stringNA; })
 			.attr("class", "gbody");
 
 	var svg = d3.selectAll(".svgs")
@@ -50,20 +100,32 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		.attr("class", "house")
 		.attr("transform",
 				"translate(" +  (width/2) + " ," + 
-                           		(height + margin.top + 20) + ")")
+                           		0 + ")")
 		.style("text-anchor", "middle")
 		.text(function(d) { return d.key });
 
+	svg.append("text")
+		.attr("class", "xlabel")
+		.attr("transform",
+				"translate(" +  (width/2) + " ," + 
+                           		(height + margin.top + 20) + ")")
+		.style("text-anchor", "middle")
+		.text(function(d) { return "Popularity" });
 
+  svg.append("text")
+  	  .attr("class", "ylabel")
+      .attr("transform", "rotate(-90)")
+      .attr("y", 0 - margin.left)
+      .attr("x",0 - (height / 2))
+      .attr("dy", "1em")
+      .style("text-anchor", "middle")
+      .text("Probability of Death"); 
 
-		console.log("data:");
-		console.log(gotData);
-
-		d3.csv("GOTHOUSES.csv", function(error, data) {
-			console.log(data);
-		})
 
 		//create plots
+		uniqueData.forEach(function(d) {
+			createPlot(d.house);
+		});
 
 
 	//Draw X axis
@@ -75,7 +137,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
     //Draw Y axis
     svg.append("g")
       .attr("class", "yaxis")
-      .attr("transform", "translate(" + width + ",0)")
+      .attr("transform", "translate(0,0)")
       .call(d3.axisLeft(y));
 
     svg.selectAll(".tick")
@@ -87,12 +149,15 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 
 
    	function createPlot(house) {
-   		x.domain([0, 1]);
-   		y.domain([0.1]);
+   		x.domain([0, 1.1]);
+   		y.domain([0, 1.1]);
 
-   		var houseNS = house.split(" ").join("");
+   		var houseSTR = house.toString();
 
+   		var houseNA = houseSTR.split("'").join("");
+		var houseNS = houseNA.split(" ").join("");
    		var houseID = "#" + houseNS;
+
    		var data = gotData;
    		var filteredGOT = data.filter(function(d) { return d.key == house; });
 
@@ -109,6 +174,13 @@ d3.csv("character-predictions.csv", function(error, rawData) {
    			.style("opacity", .5);
    	}
 
+   		d3.selectAll("circle")
+   			.on("mousover", function(d) {
+   				console.log(d.name);
+
+   				d3.select(details)
+   					.innerHTML = "Name:" + d.name;
+   			});
 
 
 
@@ -117,8 +189,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 
 
 
-
-
+	});
 });
 	
 </script>
