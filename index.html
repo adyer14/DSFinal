@@ -89,7 +89,7 @@ d3.csv("character-predictions.csv", function(error, rawData) {
 		.attr("class", "house")
 		.attr("transform",
 				"translate(" +  (width/2) + " ," + 
-                           		(height + margin.top + 20) + ")")
+                           		0 + ")")
 		.style("text-anchor", "middle")
 		.text(function(d) { return d.key });
 
