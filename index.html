@@ -185,7 +185,7 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    			.attr("cy", function(d) { return y(d.prob_dead); })
    			.attr("fill", function(d) {
    				if (d.isAlive == "1") {
-   					return "Green"
+   					return "Blue"
    				} else {
    					return "Red"
    				}
@@ -195,7 +195,7 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
 
    	var characters = d3.selectAll(".dot");
 
-   	characters.on("click", function(gotData) {
+   	characters.on("mouseover", function(gotData) {
    		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
    		document.getElementById("Title").innerHTML = "Title: " + gotData.title;
 
@@ -205,14 +205,21 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
    			document.getElementById("Gender").innerHTML = "Gender: Female"
    		}
 
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
-   		document.getElementById("Name").innerHTML = "Name: " + gotData.name;
+   		document.getElementById("House").innerHTML = "House: " + gotData.house;
+   		document.getElementById("Mother").innerHTML = "Mother: " + gotData.mother;
+   		document.getElementById("Father").innerHTML = "Father: " + gotData.father;
+   		document.getElementById("Heir").innerHTML = "Heir: " + gotData.heir;
+   		document.getElementById("Spouse").innerHTML = "Spouse: " + gotData.spouse;
+
+   		if(gotData.isNoble == "1") {
+   			document.getElementById("Noble").innerHTML = "Is a Noble: Yes"
+   		} else {
+   			document.getElementById("Noble").innerHTML = "Is a Noble: No"
+   		}
+
+   		document.getElementById("DeadRelatives").innerHTML = "Number of Dead Relatives: " + gotData.numDeadRelations;
+   		document.getElementById("Popularity").innerHTML = "Popularity: " + gotData.popularity;
+   		document.getElementById("ProbOfDeath").innerHTML = "Probability of Belonging to Death Class: " + gotData.prob_dead;
    	});
 
 
