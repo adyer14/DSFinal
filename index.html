@@ -16,6 +16,10 @@ text {
 	font-weight: bold;
 }
 
+p {
+	font-family: 'Cinzel Decorative', cursive;
+}
+
 .xlabel {
 	font-weight: normal;
 }
@@ -221,7 +225,7 @@ d3.csv("final_with_predictions.csv", function(error, rawData) {
 
    		document.getElementById("DeadRelatives").innerHTML = "Number of Dead Relatives: " + gotData.numDeadRelations;
    		document.getElementById("Popularity").innerHTML = "Popularity: " + gotData.popularity;
-   		document.getElementById("ProbOfDeath").innerHTML = "Probability of Belonging to Death Class: " + gotData.prob_dead;
+   		document.getElementById("ProbOfDeath").innerHTML = "Probability of Death: " + gotData.prob_dead;
    	});
 
 
